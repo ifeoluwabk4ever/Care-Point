@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    background: #f3f3f3;
+    margin: 0;
+    width: 100%;
+}
+.header{
+    width: 80%;
+    margin: auto;
+}
+.header2, .hamburger{
+    display: none;
+}
+.contact-details{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+.contact-details > div{
+    display: flex;
+}
+.mid-logo{
+    margin: 0 1rem;
+    color: #fff;
+    padding: 0.5rem;
+    background: #0087be;
+}
+.mid-detail h3{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #585757;
+}
+.mid-detail p{
+    font-size: 0.9rem;
+    color: #7e7d7d;
+}
+.navbar{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #7e7d7d;
+    text-transform: capitalize;
+    font-family: poppins;
+}
+.navbar ul a:hover{
+    text-transform: uppercase;
+    color: #0087be;
+}
+.social-links a{
+    color: #222222 !important;
+}
+.home{
+    height: 85vh;
+    width: 100%;
+    background-image: url(./Images/mainBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.caption{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin: auto 0;
+    text-align: center;
+}
+.caption h1{
+    font-size: 3rem;
+    color: #363636;
+}
+.caption p{
+    width: 80%;
+    margin: 2rem auto;
+    color: #7e7d7d;
+    line-height: 1.5rem;
+}
+.read-more{
+    background: #0087be;
+    color: #f3f3f3;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+.read-more:hover, .read-me:hover{
+    color: #0087be;
+    background: #f3f3f3;
+    border: 1px groove #0087be;
+}
+.services{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+.services > div{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    padding-bottom: 3rem;
+}
+.services > div > div{
+    margin: auto;
+    width: 90%;
+}
+.services > div > div div{
+    color: black;
+    background: #fff;
+    width: 20%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+.services > div > div h1{
+    text-transform: capitalize;
+}
+.services > div > div p{
+    line-height: 2rem;
+    margin: 1rem auto;
+}
+.best-treatment{
+    background: #43b1d2;
+}
+.emergency{
+    background: #3fb6c6;
+}
+.medical-staff{
+    background: #3cbbbb;
+}
+.ambulance{
+    background: #37c3a8;
+}
+.choose-us{
+    padding-bottom: 4rem;
+    background: #f3f3f3;
+}
+.choose-head{
+    text-align: center;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5rem auto 2rem;
+}
+.choose-head h1{
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: #222222;
+}
+.choose-head p{
+    color: #363636;
+    font-weight: 400;
+}
+.choose-detail{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.choose1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+    margin: 1rem auto;
+}
+.choose-block > div{
+    display: flex;
+    place-items: center;
+}
+.sed-logo{
+    background: #0087be;
+    color: #fff;
+    padding: 1rem;
+    width: 4rem;
+    margin: 2rem 2rem 2rem 0;
+}
+.show2, .show1, .show2 p, .show1 p{
+    width: 80%;
+    margin: auto;
+}
+.choose-block > div h1{
+    text-transform: capitalize;
+    color: #7e7d7d;
+    font-size: 2rem;
+}
+.stat{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    background: url(./Images/statBg.jpg);
+}
+.stat-pad{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.stat-pod{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.capture{
+    text-align: center;
+}
+.capture i{
+    margin: 2rem auto;
+}
+.capture h1{
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.capture div{
+    border-bottom: 5px solid white;
+    width: 20%;
+    margin: 1rem auto;
+}
+.capture p{
+    width: 50%;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+.gallery, .our-team{
+    padding-top: 6rem;
+}
+.services> div{
+    padding-top: 10rem;
+}
+.choose-us{
+    padding-top: 5rem;
+}
+.works{
+    display: flex;
+    width: 80%;
+    font-family: poppins;
+    margin: 2rem auto;
+}
+.work-head{
+    margin-bottom: 2rem;
+}
+.work-head h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #222222;
+}
+.work-head p{
+    color: #6e6c6c;
+}
+.work-side{
+    width: 70%;
+    margin-right: 2rem;
+}
+.work-detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.work-detail > div:first-child{
+    margin-right: 0.5rem;
+}
+.work-detail > div:last-child{
+    margin-left: 0.5rem;
+}
+.work-block1 h3{
+    color: #666565;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.work-block1 h5{
+    color: #0c9ad3;
+    margin: 0.3rem 0 1rem 0;
+}
+.work-block1 p{
+    color: #6e6c6c;
+    font-size: 0.9rem;
+}
+.read-me{
+    margin: 2rem 0 0 35%;
+    border: none;
+    background: #0087be;
+    color: #f3f3f3;
+    padding: 0.8rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+.work-img{
+    width: 100%;
+    height: 15rem;
+}
+.creative-side{
+    width: 35%;
+}
+.treatment{
+    background: #e7e7e7;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #3d3d3d;
+    font-weight: 500;
+    display: flex;
+    text-transform: capitalize;
+    border-radius: 2rem;
+}
+.treatment:hover, .treatment.t-active{
+    background: #0087be;
+    color: #fff;
+}
+.treatmentP.active{
+    display: block;
+}
+.treatment i{
+    margin-right: 1rem;
+}
+.treatment h1{
+    font-weight: 400;
+}
+.heart-treatment{
+    margin-bottom: 1rem;
+}
+.treatmentP{
+    color: #6e6c6c;
+    display: none;
+    font-size: 0.9rem;
+    margin: 1rem 0 2rem 0;
+}
+.gallery{
+    height: 100%;
+    background: url(./Images/galleryBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.gallery > div, .our-team > div{
+    width: 75%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.gallery-head h1, .team-head h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.gallery-head p, .team-head p{
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    line-height: 1.7rem;
+}
+.gallery-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gallery-block img{
+    padding: 1rem;
+    width: 100%;
+}
+.our-team{
+    height: 100vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.team-people{
+    display: flex;
+    color: #7e7d7d;
+    justify-content: space-between;
+}
+.tpeople h2, .tpeople h4{
+    font-weight: 500;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+.tpeople img{
+    border-radius: 100%;
+    width: 15rem;
+}
+.tpeople div{
+    color: #0087be;
+    display: flex;
+    justify-content: space-evenly;
+}
+.consult{
+    background: #e6e5e5;
+    padding: 3rem 0;
+}
+.consult div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: space-between;
+}
+.consult h1{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+.footer-page{
+    background: #111;
+    color: #f3f3f3;
+}
+.footer-page > div{
+    display: grid;
+    width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 5rem 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+.get-in-touch h1, .social-icons h1, .quick-links h1, .form h1{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+.get-in-touch > div{
+    display: flex;
+    margin: 3rem 0;
+    color: #7e7d7d;
+}
+.mail{
+    margin-top: 0 !important;
+}
+.get-in-touch > div i{
+    margin-right: 1rem;
+}
+.address div{
+    text-transform: capitalize;
+}
+.social-icons{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
+.social-icons a:hover, .social-links a:hover{
+    transform: scale(1.2);
+}
+.quick-links a{
+    line-height: 2.5rem;
+    color: #7e7d7d;
+    text-transform: capitalize;
+}
+.quick-links a i{
+    color: #0c9ad3;
+    margin-right: 1rem;
+}
+.quick-links a li:hover{
+    text-transform: uppercase;
+}
+.form input, .form textarea{
+    background: transparent;
+    border: transparent;
+    padding: 1rem 0;
+    width: 90%;
+    border-bottom: 2px groove #7e7d7d;
+}
+.form textarea{
+    margin-bottom: 2rem;
+    resize: none;
+}
+.form input[type=tel]{
+    margin: 1rem 0;
+}
+.form input:hover, .form textarea:hover{
+    background: rgba(255,255,255,0.2);
+    border-bottom-color: #0c9ad3;
+}
+.submit{
+    padding: 0.5rem 1rem;
+}
+.submit:hover{
+    border: 2px solid #37c3a8;
+    color: #37c3a8;
+    background: #fff;
+}
+footer{
+    background: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-name{
+    padding: 2rem 0;
+    color: #7e7d7d;
+    text-align: center;
+}
+
+
+
+
+#topBtn{
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    background: #0087be;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+}
+#topBtn:hover{
+    background: #7e7d7d;
+    color: #000;
+}
