@@ -22,20 +22,7 @@ header = document.querySelector('header');
     document.querySelector('#copyright')
         .appendChild(document.createTextNode(new Date().getFullYear()));
 
-    // document.querySelectorAll('.treatment').forEach((items) => {
-    //     items.addEventListener('click', () => {
-    //         document.querySelectorAll('.treatmentP').forEach((item) =>{
-    //             item.classList.toggle('active')
-    //         }
-    //     );
-    //     });
-    // })
-    document.querySelectorAll('.treatment').forEach((items) => {
-        items.addEventListener('click', () => {
-            items.classList.toggle('t-active');
-            document.querySelector('.treatmentP').classList.toggle('active');
-        })
-    })
+        
     document.querySelector('.drop-line').addEventListener('click', () => {
         document.querySelector('.dropdown').classList.toggle('pop-out');
     });
@@ -43,3 +30,18 @@ header = document.querySelector('header');
     dropdown.addEventListener('click', () => {
         dropdown.classList.toggle('pop-out');
     });
+
+    let questions = document.querySelectorAll('.questions');
+
+    questions.forEach((question) => {
+        let btn = question.querySelector('.question-btn');
+
+        btn.addEventListener('click', () => {
+            questions.forEach((item) => {
+                if (item !== question) {
+                    item.classList.remove('show-text')
+                }
+            })
+            question.classList.toggle('show-text')
+        })
+    })
